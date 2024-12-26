@@ -4,7 +4,7 @@ void Day1::parseInput(const std::string& file_name) {
     
     std::ifstream file(file_name);
     if (!file.is_open()) {
-        std::cerr << "File for day 1 cannot be opened!" << std::endl";
+        std::cerr << "File for day 1 cannot be opened!" << std::endl;
         return;
     }
     std::string line;
@@ -21,12 +21,6 @@ void Day1::parseInput(const std::string& file_name) {
         std::stringstream s(line);
         int l, r;
         s >> l >> r;
-        
-        // Read left and right values from the line
-        if (!(s >> l >> r)) {
-            std::cerr << "Error: Failed to read two integers from line: " << line << std::endl;
-            continue;  // Skip this line and continue processing the next one
-        }
         m_left.push_back(l);
         m_right.push_back(r);
     }

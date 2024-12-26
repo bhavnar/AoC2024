@@ -6,6 +6,9 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+#set(CMAKE_BUILD_TYPE Debug)
+#add_compile_options(-g -Wall -Wextra -Werror -Wpedantic -Wformat=2 -Wno-unused-parameter -Wshadow  -Wwrite-strings -Wstrict-prototypes -Wold-style-definition -Wredundant-decls -Wnested-externs -Wmissing-include-dirs )
+
 # Enable Testing
 enable_testing()
 
